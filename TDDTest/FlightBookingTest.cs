@@ -54,11 +54,5 @@ namespace TDDTest
             // then
             error.Should().BeOfType<OverbookingError>();
         }
-
-        /// <summary>
-        /// 用户信息验证
-        /// </summary>
-        /// public void InvalidUser_booking()
-       
     }
 }
