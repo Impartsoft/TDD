@@ -11,9 +11,10 @@ namespace TDDTest
     {
         /// <summary>
         /// 用户正常订座
+        ///  1.使用邮箱订合适数量（飞机剩余的座位大于客户所订的位置 并且 容户信息不为空，容户订的座位大于e）的位置。
         /// </summary>
         [Fact]
-        public void Normal_booking()
+        public void NormalBooking_ReturnTrue()
         {
             // given
             var flight = new Flight(seatCapacity: 6);
